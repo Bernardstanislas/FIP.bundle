@@ -1,7 +1,7 @@
 ART = 'art-default.jpg'
 ICON = 'icon-default.jpg'
-NAME = 'Resonance 104.4 fm'
-STREAM_URL = 'http://radio.canstream.co.uk:8004/live.mp3'
+NAME = 'France Inter Paris'
+STREAM_URL = 'http://95.81.155.3/fip/all/fiphautdebit.mp3'
 
 ####################################################################################################
 def Start():
@@ -11,7 +11,7 @@ def Start():
 	TrackObject.thumb = R(ICON)
 
 ####################################################################################################     
-@handler('/music/resonancefm', NAME, thumb=ICON, art=ART)
+@handler('/music/fip', NAME, thumb=ICON, art=ART)
 def MainMenu():
 
 	oc = ObjectContainer()
