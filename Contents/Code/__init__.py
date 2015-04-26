@@ -26,6 +26,9 @@ def CreateTrackObject(url, title, include_container=False):
 		key = Callback(CreateTrackObject, url=url, title=title, include_container=True),
 		rating_key = url,
 		title = title,
+		source_title = title,
+		thumb = ICON,
+		art = ART,
 		items = [
 			MediaObject(
 				parts = [
